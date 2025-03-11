@@ -6,7 +6,7 @@ export default function Header() {
         <header>
             <div className="row">
                 {/* parte logo */}
-                <nav className="logo">
+                <nav className="logo-film">
                     <Link to='/'>L/BRARY FILM</Link>
                 </nav>
             </div>
