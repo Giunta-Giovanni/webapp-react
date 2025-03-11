@@ -4,9 +4,9 @@
 capiamo bene quello che sarà la nostra App di FE e creiamoci lo schemino relativo (components/pages/layout/dati).√
 
 <!-- MILESTONE 1 -->
-Mettiamo su un nuovo progetto React aiutandoci con Vite
-Ripuliamo come sempre l’app da file e codice di esempio non necessari
-Installiamo il necessario: React Router, e Bootstrap (se volete utilizzarlo)
+Mettiamo su un nuovo progetto React aiutandoci con Vite √
+Ripuliamo come sempre l’app da file e codice di esempio non necessari√
+Installiamo il necessario: React Router, e Bootstrap (se volete utilizzarlo)√
 
 <!-- MILESTONE 2 -->
 Creiamo un layout di base per la nostra applicazione ed impostiamo le rotte per le diverse pagine.
