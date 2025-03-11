@@ -15,16 +15,35 @@ a {
 
 /* HEADER */
 header {
-  padding: 20px 0;
+  padding: 20px;
 }
 
-.logo {
+.logo-film a {
   font-size: 3rem;
+  text-decoration: none;
+  color: black;
 }
 
 
 
 /* MAIN */
 
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 250px;
+  margin: 15px 0;
+}
+
+.card img {
+  width: 100%;
+}
 
 /* FOOTER */
+footer {
+  padding: 20px;
+}
