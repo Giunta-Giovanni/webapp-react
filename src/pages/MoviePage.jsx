@@ -37,10 +37,10 @@ export default function MoviePage() {
             </section>
 
             <section className="card" id="new-review" >
-                <div class="card-header">
+                <div className="card-header">
                     Inserisci la tua recensione
                 </div>
-                <div class="card-body">
+                <div className="card-body">
                     <form action="..">
                         <div className="mb-3">
                             <label htmlFor="input-name" className="form-label">Name</label>
