@@ -17,17 +17,20 @@ export default function HomePage() {
     }, []);
 
     return (
+        <>
+            <h1>BEST MOVIES</h1>
+            <section className="card-section">
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+            </section>
+        </>
 
-        <section className="card-section">
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-        </section>
 
     )
 }
