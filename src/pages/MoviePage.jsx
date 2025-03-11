@@ -72,7 +72,9 @@ export default function MoviePage() {
                             />
                         </div>
 
-                        <button className="btn btn-primary">invia</button>
+                        <div className="d-flex justify-content-end">
+                            <button className="btn btn-primary">invia</button>
+                        </div>
                     </form>
                 </div>
 
