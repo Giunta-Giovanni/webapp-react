@@ -11,7 +11,7 @@ Installiamo il necessario: React Router, e Bootstrap (se volete utilizzarlo)√
 <!-- MILESTONE 2 -->
 Creiamo un layout di base per la nostra applicazione ed impostiamo le rotte per le diverse pagine.
 Creiamo 2 pagine:
-La home, in cui mostreremo la lista dei film
+La home, in cui mostreremo la lista dei film √
 La pagina di dettaglio di un singolo film (qui poi anche avrete le recensioni relative)
 
 <!-- BONUS -->

@@ -28,20 +28,44 @@ header {
 
 /* MAIN */
 
+
+/* HOME PAGE */
 .card-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.card {
+/* HomePage -> movie card */
+.card-section .card {
   width: 250px;
   margin: 15px 0;
 }
 
-.card img {
+.card-section .card img {
   width: 100%;
 }
+
+/* MoviePage */
+#movie-details {
+  border-bottom: 2px solid rgba(178, 178, 178, 0.556);
+  padding-bottom: 20px;
+}
+
+.movie-cover {
+  width: 300px;
+}
+
+.movie-cover img {
+  width: 100%;
+}
+
+
+
+
+
+
+
 
 /* FOOTER */
 footer {
