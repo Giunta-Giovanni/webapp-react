@@ -1,7 +1,7 @@
 - Esercizio webapp-react
 
 <!-- MILESTONE 0 -->
-capiamo bene quello che sarà la nostra App di FE e creiamoci lo schemino relativo (components/pages/layout/dati).
+capiamo bene quello che sarà la nostra App di FE e creiamoci lo schemino relativo (components/pages/layout/dati).√
 
 <!-- MILESTONE 1 -->
 Mettiamo su un nuovo progetto React aiutandoci con Vite
