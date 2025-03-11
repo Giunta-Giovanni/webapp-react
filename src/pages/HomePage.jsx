@@ -1,5 +1,23 @@
+import MovieCard from "../components/MovieCard"
 export default function HomePage() {
     return (
-        <>questa è la mia homepage</>
+
+        <section className="card-section">
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+
+
+
+
+
+
+        </section>
+
     )
 }
