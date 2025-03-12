@@ -2,32 +2,47 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import MovieCard from "../components/MovieCard"
 export default function HomePage() {
+
+    // salviamo le variabili di stato
+    const [movies, setMovies] = useState([])
+
     function fetchMovies() {
         axios.get('http://localhost:3000/api/movies')
             .then(res => {
-                console.log(res.data)
+                setMovies(res.data)
             })
             .catch(err => {
                 console.log(err)
             })
     }
 
+    // all'avvio della pagina richiama tutti i movies
+    useEffect(fetchMovies, []);
+
+    // manda un console log ogni volta che i film vengono aggiornati
     useEffect(() => {
-        fetchMovies();
-    }, []);
+        if (movies.length > 0) {
+            console.log("Film aggiornati:", movies);
+        }
+    }, [movies]);
+
+
+    const rendermovies = () => {
+        return movies.map(
+            movie => {
+                return (
+                    <MovieCard key={movie.id} />
+                )
+            }
+
+        )
+    }
 
     return (
         <>
             <h1>BEST MOVIES</h1>
             <section className="card-section">
-                <MovieCard />
-                <MovieCard />
-                <MovieCard />
-                <MovieCard />
-                <MovieCard />
-                <MovieCard />
-                <MovieCard />
-                <MovieCard />
+                {rendermovies()}
             </section>
         </>
 
