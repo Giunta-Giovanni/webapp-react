@@ -31,7 +31,7 @@ export default function HomePage() {
         return movies.map(
             movie => {
                 return (
-                    <MovieCard key={movie.id} />
+                    <MovieCard key={movie.id} movieProp={movie} />
                 )
             }
 
