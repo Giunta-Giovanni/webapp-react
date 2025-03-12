@@ -180,6 +180,7 @@ header:hover {
 #movie-details {
   border-bottom: 1px solid rgba(147, 147, 147, 0.525);
   padding-bottom: 20px;
+  color: rgb(184, 184, 184);
 }
 
 .movie-cover img {
@@ -201,11 +202,16 @@ header:hover {
 
 .movie-link .active {
   border-bottom: 1px solid rgb(253, 253, 253);
+  color: white;
 }
 
 .movie-link a:hover {
   border-bottom: 1px solid rgb(253, 253, 253);
 }
+
+/* Movie Page -> card review */
+
+
 
 /* FOOTER */
 footer {
