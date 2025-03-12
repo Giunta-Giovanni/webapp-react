@@ -13,62 +13,260 @@ a {
   color: black;
 }
 
+body {
+  background: linear-gradient(180deg, #030b17, #1a1d29);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+
+
+}
+
 /* HEADER */
 header {
-  padding: 20px;
+  padding: 20px 40px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
 }
+
 
 .logo-film a {
   font-size: 3rem;
+  font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
 }
 
+header:hover {
+  background: linear-gradient(180deg, #060d1f, #22283c);
+}
+
+.logo-film a:hover {
+  color: #00aaff;
+  transform: scale(1.1);
+  text-shadow: 0 0 15px rgba(0, 170, 255, 0.7);
+}
 
 
 /* MAIN */
 
 
 /* HOME PAGE */
+/* .card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+} */
+
+/* HomePage -> movie card */
+/* .card-section .card {
+  width: 250px;
+  margin: 15px 0;
+} */
+
+/* .card-section .card img {
+  width: 100%;
+} */
+
+/* HOME PAGE */
 .card-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 20px;
 }
 
-/* HomePage -> movie card */
+/* Card */
+.card a {
+  text-decoration: none;
+  color: white;
+}
+
 .card-section .card {
-  width: 250px;
-  margin: 15px 0;
+  width: 300px;
+  margin: 20px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #1c1c1c;
+  color: white;
 }
 
-.card-section .card img {
+
+/* Immagine della card */
+.card-image {
   width: 100%;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #00000060, #003cff79);
+
 }
+
+.card-image img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: top;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+  clip-path: circle(107% at 103% 88%);
+
+
+}
+
+
+.card-section .card .card-body {
+  padding: 15px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.card .card-body h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.card-body address i {
+  font-size: 1rem;
+  font-style: italic;
+  color: #aaa;
+  /* Colore del regista */
+}
+
+.card .card-text {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin: 10px 0;
+}
+
+
+
+
+.card-ranking {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 2px #ffffff, 0 0 5px #ffffff;
+}
+
+
+
+
+
+/* Hover Effect */
+.card-section .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card-section .card:hover img {
+  opacity: 0.7;
+}
+
 
 /* MoviePage */
 #movie-details {
-  border-bottom: 2px solid rgba(178, 178, 178, 0.556);
+  border-bottom: 1px solid rgba(147, 147, 147, 0.525);
   padding-bottom: 20px;
-}
-
-.movie-cover {
-  width: 300px;
 }
 
 .movie-cover img {
   width: 100%;
 }
 
+.movie-link {
+  border-bottom: 1px solid rgba(147, 147, 147, 0.525);
+  padding: 20px 0;
+}
 
+.movie-link a {
+  font-size: 1.5rem;
+  color: rgb(184, 184, 184);
+  text-decoration: none;
+  margin-right: 20px;
+  padding-bottom: 22px;
+}
 
+.movie-link .active {
+  border-bottom: 1px solid rgb(253, 253, 253);
+}
 
-
-
-
-
+.movie-link a:hover {
+  border-bottom: 1px solid rgb(253, 253, 253);
+}
 
 /* FOOTER */
 footer {
-  padding: 20px;
+  /* background-color: #141414; */
+  padding: 50px 0;
+}
+
+/* channel side */
+
+.social-links {
+  padding: 20px 0;
+}
+
+.channel {
+  display: flex;
+}
+
+.single-channel {
+  margin-right: 25px;
+  font-size: 1.3rem;
+}
+
+/* link side */
+.member-footer-links {
+  display: flex;
+}
+
+.footer-link {
+  font-size: 0.9rem;
+  padding: 0px 50px 10px 0px;
+}
+
+.footer-linka {
+  color: #5a5a5a;
+}
+
+.footer-link:hover .footer-linka {
+  color: #bdbdbd;
+  text-decoration: underline;
+  text-decoration-color: #bdbdbd;
+  text-underline-offset: 4px;
+}
+
+/* member-footer-service */
+.service-code {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  padding: .5em;
+  border: 1px solid grey;
+  background: transparent;
+  color: grey;
+  cursor: pointer;
+}
+
+.service-code:hover {
+  color: rgb(213, 213, 213);
+}
+
+/* member-footer-service */
+.member-footer-copyright {
+  color: #5a5a5a;
+  font-size: 0.7rem;
+
 }
