@@ -6,6 +6,7 @@ export default function HomePage() {
     // salviamo le variabili di stato
     const [movies, setMovies] = useState([])
 
+    // funzione di chiamata all'api per tutti i film
     function fetchMovies() {
         axios.get('http://localhost:3000/api/movies')
             .then(res => {
@@ -14,7 +15,7 @@ export default function HomePage() {
             .catch(err => {
                 console.log(err)
             })
-    }
+    };
 
     // all'avvio della pagina richiama tutti i movies
     useEffect(fetchMovies, []);

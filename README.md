@@ -14,5 +14,13 @@ Creiamo 2 pagine:
 La home, in cui mostreremo la lista dei film 
 La pagina di dettaglio di un singolo film (qui poi anche avrete le recensioni relative)
 
+<!-- MILESTONE 3 --> √
+Proviamo quindi ad effettuare una chiamata Ajax dalla home del progetto React, per ottenere la lista dei libri √
+
+<!-- MILESTONE 4 --> √
+Effettuiamo una chiamata AJAX dalla pagina di dettaglio per ottenere il dettaglio di un singolo film, comprese le sue recensioni √
+
 <!-- BONUS -->√
-Curare l’aspetto estetico della vostra applicazione
+- Gestione 404 completa (pagina, rotta, redirect); √
+- Controlli sui valori/props nei componenti;
+- Curare l’aspetto estetico della vostra applicazione (questo rimane come bonus di default sempre..)
