@@ -1,5 +1,6 @@
 // importiamo parte di link del modulo react-router
 import { Link } from "react-router-dom"
+import logo from '../assets/logo_moontrip.png'
 
 export default function Header() {
     return (
@@ -7,7 +8,9 @@ export default function Header() {
             <div className="row">
                 {/* parte logo */}
                 <nav className="logo-film">
-                    <Link to='/'>L/BRARY FILM</Link>
+                    <Link to='/'>
+                        <img id="logo" src={logo} alt="" />
+                    </Link>
                 </nav>
             </div>
         </header>
