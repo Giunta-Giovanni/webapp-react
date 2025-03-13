@@ -2,6 +2,7 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 import { useParams, useNavigate, Link } from "react-router-dom"
 import ReviewCard from "../components/ReviewCard"
+import ReviewForm from "../components/ReviewForm"
 export default function MoviePage() {
 
     // requperiamo l'id
@@ -108,53 +109,10 @@ export default function MoviePage() {
                     Inserisci la tua recensione
                 </div>
                 <div className="card-body">
-                    <form action="..">
-                        <div className="mb-3">
-                            <label htmlFor="input-name" className="form-label">Name</label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                id="Name"
-                                placeholder="inserisci il tuo nome"
-                            />
-                        </div>
-                        <div className="mb-3">
-                            <label htmlFor="input-review" className="form-label">Recensione</label>
-                            <textarea
-                                className="form-control"
-                                id="Review"
-                                rows="3"
-                                placeholder="inserisci la tua recensione"
-                            >
-
-                            </textarea>
-                        </div>
-                        <div className="mb-3">
-                            <label htmlFor="input-vote" className="form-label">Voto</label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                id="input-vote"
-                                placeholder="inserisci il tuo voto"
-                            />
-                        </div>
-
-                        <div className="d-flex justify-content-end">
-                            <button className="btn btn-primary">invia</button>
-                        </div>
-                    </form>
+                    <ReviewForm
+                        movie_id={id}
+                        reloadReview={fetchMovie} />
                 </div>
-
-
-
-
-
-
-
-
-
-
-
             </section >
         </>
 
