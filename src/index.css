@@ -1,3 +1,7 @@
+:root {
+  background-color: #030b17;
+}
+
 /***************************** GENERAL *****************************/
 li {
   list-style: none;
@@ -69,14 +73,12 @@ header {
 /* ------------------------ HOME PAGE ------------------------ */
 .card-section {
   display: flex;
-  /* flex-wrap: wrap; */
-  overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: var(--gap);
-  padding-inline: var(--gap);
-  /* justify-content: space-evenly; */
-  padding: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
+
+
 
 /* Card */
 .card a {
