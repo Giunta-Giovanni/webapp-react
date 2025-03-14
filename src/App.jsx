@@ -7,6 +7,7 @@ import DefaultLayout from './layout/DefaultLayout';
 // importiamo le pagine
 import HomePage from "./pages/HomePage";
 import MoviePage from "./pages/MoviePage";
+import CreateMoviePage from "./pages/CreateMoviePage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 
@@ -16,6 +17,7 @@ export default function App() {
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route index path="/" element={<HomePage />} />
+          <Route path="/add_movie" element={<CreateMoviePage />} />
           <Route path="/Movie/:id" element={<MoviePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>

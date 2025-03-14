@@ -7,10 +7,14 @@ export default function Header() {
         <header>
             <div className="row">
                 {/* parte logo */}
-                <nav className="logo-film">
+                <div className="col logo-film">
                     <Link to='/'>
                         <img id="logo" src={logo} alt="" />
                     </Link>
+                </div>
+                <nav className="col">
+                    <Link to='/add_movie'>Add Movie</Link>
+
                 </nav>
             </div>
         </header>
