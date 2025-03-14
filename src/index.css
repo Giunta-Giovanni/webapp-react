@@ -88,6 +88,7 @@ header {
 
 .card-section .card {
   width: 300px;
+  height: 480px;
   margin: 20px;
   position: relative;
   border-radius: 8px;
@@ -170,6 +171,7 @@ header {
 .card-section .card:hover img {
   opacity: 0.7;
 }
+
 
 
 

@@ -18,7 +18,7 @@ export default function MovieCard(props) {
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
                     <address><i>{director}</i></address>
-                    <p className="card-text">{abstract}</p>
+                    {/* <p className="card-text">{abstract}</p> */}
                 </div>
                 {/* square superiore con numero*/}
                 <div className="card-ranking">
