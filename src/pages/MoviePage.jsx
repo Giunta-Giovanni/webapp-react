@@ -104,7 +104,7 @@ export default function MoviePage() {
             </section >
 
             {/* sezione nuova recensione */}
-            < section className="card bg-black" id="new-review" >
+            < section className="new-review" id="new-review" >
                 <div className="card-header">
                     Inserisci la tua recensione
                 </div>

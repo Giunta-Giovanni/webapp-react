@@ -20,6 +20,11 @@ Proviamo quindi ad effettuare una chiamata Ajax dalla home del progetto React, p
 <!-- MILESTONE 4 --> √
 Effettuiamo una chiamata AJAX dalla pagina di dettaglio per ottenere il dettaglio di un singolo film, comprese le sue recensioni √
 
+<!-- MILESTONE 5  -->
+Creiamo un componente che contenga il form per le recensioni √
+Inseriamo questo componente nella pagina di dettaglio del film √
+All’invio del form, la nuova recensione viene salvata sul database e visualizzata nella pagina, in fondo alle altre √
+
 <!-- BONUS -->√
 - Gestione 404 completa (pagina, rotta, redirect); √
 - Controlli sui valori/props nei componenti;

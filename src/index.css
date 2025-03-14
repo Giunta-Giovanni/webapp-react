@@ -69,8 +69,12 @@ header {
 /* ------------------------ HOME PAGE ------------------------ */
 .card-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: var(--gap);
+  padding-inline: var(--gap);
+  /* justify-content: space-evenly; */
   padding: 20px;
 }
 
@@ -90,7 +94,13 @@ header {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   background-color: #1c1c1c;
   color: white;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+
+
 }
+
+
 
 
 /* Immagine della card */
@@ -99,7 +109,6 @@ header {
   transition: opacity 0.3s ease;
   border-radius: 8px;
   background: linear-gradient(180deg, #00000060, #003cff79);
-
 }
 
 .card-image img {
@@ -110,8 +119,6 @@ header {
   transition: opacity 0.3s ease;
   border-radius: 8px;
   clip-path: circle(107% at 103% 88%);
-
-
 }
 
 .card-section .card .card-body {
@@ -205,6 +212,7 @@ header {
 
 #reviews .card {
   background-color: #7978782b;
+  border: 5px solid rgba(0, 0, 0, 0.421);
 }
 
 #reviews .card .rank {
@@ -213,7 +221,34 @@ header {
 }
 
 /* parte form recensioni */
+.new-review {
+  background-color: #7978782b;
+  padding: 20px;
+  font-size: 1.1rem;
+  color: rgb(174, 174, 174);
+  border: 5px solid rgba(0, 0, 0, 0.458);
+  border-radius: 20px;
+}
 
+.new-review .card-header {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(130, 130, 130, 0.513);
+}
+
+
+
+.new-review .form-control {
+  background-color: #ffffff1e;
+  border: 1px solid black;
+}
+
+.new-review .form-control:focus {
+  background-color: #ffffff1e;
+  border: 1px solid black;
+  box-shadow: 0 0 0 .25rem rgba(3, 3, 3, 0.25);
+}
 
 
 
