@@ -64,7 +64,7 @@ export default function ReviewForm({ movie_id, reloadReview }) {
                     value={formData.text}
                     className="form-control"
                     id="Review"
-                    rows="3"
+                    rows="4"
                     placeholder="inserisci la tua recensione"
                     onChange={setFieldValue}
                 >
@@ -89,7 +89,7 @@ export default function ReviewForm({ movie_id, reloadReview }) {
             <div className="d-flex justify-content-end">
                 <button
                     type="submit"
-                    className="btn btn-primary"
+                    className="btn btn-secondary"
                 >invia
                 </button>
             </div>
