@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
 import { useParams, useNavigate, Link } from "react-router-dom"
+import undefinedBg from "../assets/undefined_bg.jpg"
 import ReviewCard from "../components/ReviewCard"
 import ReviewForm from "../components/ReviewForm"
 export default function MoviePage() {
@@ -16,14 +17,14 @@ export default function MoviePage() {
 
     // funzione di chiamata all'api per il singolo film
     function fetchMovie() {
-        axios.get(axios.get(`http://localhost:3000/api/movies/${id}`)
+        axios.get(`http://localhost:3000/api/movies/${id}`)
             .then(res => {
                 setMovie(res.data)
             })
             .catch(err => {
                 console.log(err);
                 if (err.status === 404) redirect("/PageNotFound")
-            }))
+            })
     }
 
     // all'avvio della pagina richiama il movie
@@ -54,7 +55,7 @@ export default function MoviePage() {
             <section id="movie-details">
                 <div className="movie-cover">
                     <img
-                        src={movie.bg_image}
+                        src={!movie.bg_image ? undefinedBg : movie.bg_image}
                         alt={movie.title}
                     />
                 </div>
@@ -100,7 +101,7 @@ export default function MoviePage() {
                     < p > Average: star</p >
                 </div >
                 {/* parte inferiore */}
-                {renderReviews()}
+                {!movie.reviews || movie.reviews.length === 0 ? <h3 className="no_review">non ci sono recensioni</h3> : renderReviews()}
             </section >
 
             {/* sezione nuova recensione */}
