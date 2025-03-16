@@ -17,8 +17,8 @@ export default function App() {
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route index path="/" element={<HomePage />} />
-          <Route path="/add_movie" element={<CreateMoviePage />} />
-          <Route path="/Movie/:id" element={<MoviePage />} />
+          <Route path="/movie/add_movie" element={<CreateMoviePage />} />
+          <Route path="/movie/:id" element={<MoviePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

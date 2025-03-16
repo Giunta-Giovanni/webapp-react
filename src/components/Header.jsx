@@ -16,7 +16,7 @@ export default function Header() {
                 </div>
                 <nav className="col d-flex">
                     <NavLink to='/'><FontAwesomeIcon icon={faHouse} /></NavLink>
-                    <NavLink to='/Movie/add_movie'><FontAwesomeIcon icon={faPlus} /></NavLink>
+                    <NavLink to='/movie/add_movie'><FontAwesomeIcon icon={faPlus} /></NavLink>
                 </nav>
             </div>
         </header>
