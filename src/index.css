@@ -38,16 +38,21 @@ header {
 }
 
 
-/* .logo-film a {
-  font-size: 3rem;
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  padding: 0 10px;
   transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
-} */
+}
 
 #logo {
   width: 80px;
@@ -61,24 +66,34 @@ header {
 }
 
 
-/* .logo-film a:hover {
+header nav a:hover {
   color: #00aaff;
   transform: scale(1.1);
   text-shadow: 0 0 15px rgba(0, 170, 255, 0.7);
-} */
+}
+
+header nav .active {
+  color: #00aaff;
+  text-shadow: 0 0 15px rgba(0, 170, 255, 0.7);
+  transform: scale(1.1);
+
+}
 
 
 /***************************** MAIN *****************************/
 
 /* ------------------------ HOME PAGE ------------------------ */
+#choose_for_you {
+  color: white;
+  margin-top: 20px;
+}
+
 .card-section {
   display: flex;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
   scrollbar-width: none;
 }
-
-
 
 /* Card */
 .card a {
@@ -99,11 +114,7 @@ header {
   color: white;
   flex-shrink: 0;
   scroll-snap-align: start;
-
-
 }
-
-
 
 
 /* Immagine della card */
@@ -214,6 +225,16 @@ header {
   color: rgb(177, 177, 177);
 }
 
+#reviews .no_review {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(154, 154, 154);
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(130, 130, 130, 0.513);
+
+
+}
+
 #reviews .card {
   background-color: #7978782b;
   border: 5px solid rgba(0, 0, 0, 0.421);
@@ -228,6 +249,7 @@ header {
 .new-review {
   background-color: #7978782b;
   padding: 20px;
+  margin-top: 20px;
   font-size: 1.1rem;
   color: rgb(174, 174, 174);
   border: 5px solid rgba(0, 0, 0, 0.458);
@@ -241,20 +263,58 @@ header {
   border-bottom: 1px solid rgba(130, 130, 130, 0.513);
 }
 
-
-
 .new-review .form-control {
   background-color: #ffffff1e;
   border: 1px solid black;
+  color: white;
+}
+
+.new-review #Review {
+  resize: none !important;
+}
+
+.new-review .form-control::placeholder {
+  color: rgb(215, 215, 215);
+
 }
 
 .new-review .form-control:focus {
   background-color: #ffffff1e;
   border: 1px solid black;
   box-shadow: 0 0 0 .25rem rgba(3, 3, 3, 0.25);
+  color: white;
 }
 
+/***************************** CREATE MOVIE PAGE *****************************/
+.add-movie-section {
+  margin-top: 3rem;
+}
 
+.add-movie-section h1 {
+  color: white;
+}
+
+.add-movie-section .form-label {
+  color: #b5b5b5;
+}
+
+.add-movie-section #image {
+  color: #b5b5b5;
+}
+
+.add-movie-section #bg_image {
+  color: #b5b5b5;
+}
+
+.add-movie-section .preview_cover {
+  width: 80px;
+  height: 110px;
+}
+
+.add-movie-section .preview_bg {
+  width: 100px;
+  height: 80px;
+}
 
 /***************************** FOOTER *****************************/
 footer {
