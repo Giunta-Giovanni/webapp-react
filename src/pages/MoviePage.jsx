@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
 import { useParams, useNavigate, Link } from "react-router-dom"
+import Star from "../data/function/Star"
 import undefinedBg from "../assets/undefined_bg.jpg"
 import ReviewCard from "../components/ReviewCard"
 import ReviewForm from "../components/ReviewForm"
@@ -33,6 +34,7 @@ export default function MoviePage() {
     useEffect(() => {
         if (movie.length !== 0) {
             console.log(movie)
+            console.log(movie.vote_avg)
         }
     }, [movie]);
 
@@ -47,6 +49,7 @@ export default function MoviePage() {
                 />
         )
     }
+
 
 
     return (
@@ -98,7 +101,7 @@ export default function MoviePage() {
                     {/* parte sinistra */}
                     < h5 > Le nostre recensioni</h5 >
                     {/* parte destra */}
-                    < p > Average: star</p >
+                    {<Star vote={movie.vote_avg} />}
                 </div >
                 {/* parte inferiore */}
                 {!movie.reviews || movie.reviews.length === 0 ? <h3 className="no_review">non ci sono recensioni</h3> : renderReviews()}
