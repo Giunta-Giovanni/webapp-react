@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import undefinedCover from '../assets/undefined_cover.png';
 export default function MovieCard(props) {
 
     // destrutturiamo la prop
@@ -9,7 +10,7 @@ export default function MovieCard(props) {
             <Link to={`movie/${id}`}>
                 <div className="card-image">
                     <img
-                        src={image}
+                        src={!image ? undefinedCover : image}
                         alt={title}
                         className="card-img-top"
                     />
