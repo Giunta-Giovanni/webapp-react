@@ -41,7 +41,7 @@ export default function HomePage() {
 
     return (
         <>
-            <h1>BEST MOVIES</h1>
+            <h3 id="choose_for_you">Scelti per te</h3>
             <section className="card-section">
                 {rendermovies()}
             </section>
