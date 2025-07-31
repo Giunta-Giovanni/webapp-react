@@ -3,8 +3,8 @@ import undefinedCover from '../assets/undefined_cover.png';
 export default function MovieCard(props) {
 
     // destrutturiamo la prop
-    const { id, title, director, abstract, image } = props.movieProp
-
+    const { index } = props
+    const { id, title, director, abstract, image, } = props.movieProp
     return (
         <div className="card">
             <Link to={`movie/${id}`}>
@@ -23,7 +23,7 @@ export default function MovieCard(props) {
                 </div>
                 {/* square superiore con numero*/}
                 <div className="card-ranking">
-                    <span>{id}</span>
+                    <span>{index}</span>
                 </div>
             </Link >
 

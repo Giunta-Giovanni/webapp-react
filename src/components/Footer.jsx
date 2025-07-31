@@ -52,9 +52,9 @@ export default function Footer() {
                     <div className="link-col">
                         <BoxLink linkCategory={categorylinks3} />
                     </div>
-                    <div className="link-col">
+                    {/* <div className="link-col">
                         <BoxLink linkCategory={categorylinks4} />
-                    </div>
+                    </div> */}
                 </div>
 
 

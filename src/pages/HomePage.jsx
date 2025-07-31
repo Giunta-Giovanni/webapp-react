@@ -30,9 +30,10 @@ export default function HomePage() {
 
     const rendermovies = () => {
         return movies.map(
-            movie => {
+            (movie, id) => {
+                const index = id + 1;
                 return (
-                    <MovieCard key={movie.id} movieProp={movie} />
+                    <MovieCard key={movie.id} index={index} movieProp={movie} />
                 )
             }
 
