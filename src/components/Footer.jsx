@@ -1,9 +1,8 @@
 // importiamo parte di link del modulo react-router
-import { Link } from "react-router-dom"
 import BoxLink from "./BoxLinks";
 import categorylinks from "../data/categorylinks";
 
-const { categorylinks1, categorylinks2, categorylinks3, categorylinks4 } = categorylinks
+const { categorylinks1, categorylinks2, categorylinks3 } = categorylinks
 export default function Footer() {
     return (
         <footer>

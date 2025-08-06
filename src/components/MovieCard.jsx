@@ -4,7 +4,7 @@ export default function MovieCard(props) {
 
     // destrutturiamo la prop
     const { index } = props
-    const { id, title, director, abstract, image, } = props.movieProp
+    const { id, title, director, image, } = props.movieProp
     return (
         <div className="card">
             <Link to={`movie/${id}`}>
